@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+<div>WHAT</div>
+<div hx-sse="connect:/todos/stream swap:message" hx-swap="beforeend">
+<div></div>
+</div>
+{% endblock %}
